@@ -61,7 +61,7 @@
 -(void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     void(^handler)(OPActionSheet*);
     handler = [self.buttonHandlers objectAtIndex:buttonIndex];
-    if ((NSNull*)handler != [NSNull null])
+    if ((__bridge void*)handler != (__bridge void*)[NSNull null])
         handler(self);
 }
 
