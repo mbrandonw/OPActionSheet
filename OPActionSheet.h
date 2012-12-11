@@ -24,7 +24,7 @@
 
 @interface OPActionSheet : UIActionSheet
 
--(id) initWithTitle:(NSString *)title message:(NSString *)message;
+-(id) initWithTitle:(NSString *)title;
 
 -(NSInteger) addButtonWithTitle:(NSString*)title handler:(void(^)(OPActionSheet *actionSheet))handler;
 -(NSInteger) setCancelButtonWithTitle:(NSString*)title handler:(void(^)(OPActionSheet *actionSheet))handler;

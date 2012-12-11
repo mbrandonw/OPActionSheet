@@ -28,7 +28,7 @@
 
 @implementation OPActionSheet
 
--(id) initWithTitle:(NSString *)title message:(NSString *)message {
+-(id) initWithTitle:(NSString *)title {
     if (! (self = [self initWithTitle:title delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil]))
         return nil;
     
